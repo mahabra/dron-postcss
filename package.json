@@ -1,0 +1,30 @@
+{
+  "name": "dron-postcss",
+  "version": "1.0.0",
+  "description": "PostCSS magic for Dron-cli",
+  "main": "postcss.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/morulus/dron-postcss"
+  },
+  "keywords": [
+    "dron",
+    "postcss",
+    "task"
+  ],
+  "author": "morulus <vladimirmorulus@gmail.com> (http://github.com/morulus/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morulus/dron-postcss/issues"
+  },
+  "homepage": "https://github.com/morulus/dron-postcss",
+  "dependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "postcss": "^4.1.13",
+    "postcss-nested": "^0.3.2",
+    "path": "latest"
+  }
+}
