@@ -26,10 +26,12 @@ module.exports = function(dron) {
 					} else {
 
 						var tar = file.replace(/\.post\.css$/, '.css');
+
 						postcss([ postcssNested, autoprefixer ]).process(content, {
 							from: file,
 							to: tar
 						}).then(function (result) {
+							
 						    result.warnings().forEach(function (warn) {
 						        self.dron.warn(warn.toString());
 						    });
@@ -38,6 +40,8 @@ module.exports = function(dron) {
 						    		self.dron.log('Processed', path.basename(tar));
 						    	}
 						    });
+						}).catch(function(error) {
+							self.dron.warn('Error', error);
 						});
 					}
 				});
